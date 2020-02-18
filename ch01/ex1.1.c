@@ -1,13 +1,11 @@
+#include "../focs.h"
+
 #include <stdio.h>
 
-typedef struct CELL *LIST;
-struct CELL {
-    int element;
-    struct CELL *next;
-};
+DefCell(int, CELL, LIST);
 
 main() {
-    struct CELL c1, c2, c3, *p;
+    CELL c1, c2, c3, *p;
     LIST list;
 
     c1.element = 42;
